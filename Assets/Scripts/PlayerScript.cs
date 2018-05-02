@@ -23,6 +23,7 @@ public class PlayerScript : MonoBehaviour
     public bool canPunch;
     public bool isCollectable;
     public bool isCollectibleInHands;
+    public Rigidbody2D selectedCollectible;
 
     #endregion Variables
 
@@ -82,11 +83,13 @@ public class PlayerScript : MonoBehaviour
 
         #region Collectible
 
+        //Pas de collectible en main
         if (Input.GetKeyDown(KeyCode.Joystick1Button3) && isCollectable && !isCollectibleInHands)
         {
             isCollectibleInHands = true;
         }
 
+        //Collectible en main
         else if (Input.GetKeyDown(KeyCode.Joystick1Button3) && isCollectibleInHands)
         {
             isCollectibleInHands = false;
@@ -181,9 +184,7 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
-    //-------Trigger-------
-
-    void OnTriggerStay2D (Collider2D other)
+    void OnCollisionStay2D(Collision2D other)
     {
         if (other.gameObject.tag == "Collectible")
         {
@@ -193,16 +194,25 @@ public class PlayerScript : MonoBehaviour
         if (isCollectibleInHands)
         {
             other.gameObject.transform.position = transform.position;
+
+            selectedCollectible = other.gameObject.GetComponent(typeof(Rigidbody2D)) as Rigidbody2D;
+        }
+
+        else
+        {
+            selectedCollectible = null;
         }
     }
 
-    void OnTriggerExit2D (Collider2D other)
+    void OnCollisionExit2D(Collision2D other)
     {
         if (other.gameObject.tag == "Collectible")
         {
             isCollectable = false;
         }
     }
+
+    //-------Trigger-------
 
 
 
