@@ -7,11 +7,12 @@ public class PlayerScript : MonoBehaviour
 
     #region Variables
 
-    private int playerDirection;
+    [Header("Variables du joueur")]
+
+    public int playerDirection;
     public int nPlayer;
     bool canJump = true;
-    private float playerSpeed;
-    private float speed = 5f;
+    public float playerSpeed;
 
     #endregion Variables
 
@@ -26,12 +27,13 @@ public class PlayerScript : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
+        #region Commandes joueurs 
         if (nPlayer == 1) //Controls P1
         {
             if (Input.GetKeyDown(KeyCode.Joystick1Button0) && canJump)
             {
                 gameObject.GetComponent<Rigidbody2D>().AddForce(transform.up * 300);
-                canJump = false;
+                //canJump = false;
             }
 
             if (Input.GetAxis("P1xAxis") >= 0.80f)
@@ -51,6 +53,7 @@ public class PlayerScript : MonoBehaviour
                 playerDirection = 0;
             }
         }
+        #endregion Commandes joueurs
     }
 
     void FixedUpdate()
@@ -63,17 +66,22 @@ public class PlayerScript : MonoBehaviour
 
     void Deplacement()
     {
-        if (playerDirection == 1)
-        {
-            playerSpeed = -speed;
-        }
-        if (playerDirection == 2)
-        {
-            playerSpeed = speed;
-        }
+        //No movement
         if (playerDirection == 0)
         {
-            speed = 0;
+            playerSpeed = 0;
+        }
+
+        //Left
+        else if (playerDirection == 1)
+        {
+            playerSpeed = -0.05f;
+        }
+
+        //Right
+        else if (playerDirection == 2)
+        {
+            playerSpeed = 0.05f;
         }
     }
 }
