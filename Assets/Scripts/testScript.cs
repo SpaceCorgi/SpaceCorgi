@@ -6,6 +6,7 @@ public class testScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        print("test");
 		
 	}
 	
