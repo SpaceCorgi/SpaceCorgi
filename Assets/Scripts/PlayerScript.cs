@@ -56,6 +56,9 @@ public class PlayerScript : MonoBehaviour
     void FixedUpdate()
     {
         Deplacement();
+
+        transform.position = new Vector2(transform.position.x + playerSpeed, transform.position.y);
+
     }
 
     void Deplacement()
@@ -72,8 +75,5 @@ public class PlayerScript : MonoBehaviour
         {
             speed = 0;
         }
-
-        gameObject.transform.Translate(playerSpeed, 0, 0);
-        gameObject.transform = new Vector2(transform.position.x + playerSpeed, transform.position.y);
     }
 }
