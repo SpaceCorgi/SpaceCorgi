@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Crack : MonoBehaviour {
 	#region Variables
-	public GameManager gameManager;
+	public GameObject gameManager;
+	GameManager gm;
 	float repair;
 	float crackDestructionRate;
 	float crackHitPoints;
@@ -15,11 +16,14 @@ public class Crack : MonoBehaviour {
 	#endregion
 	// Use this for initialization
 	void Start () {
-		repair = gameManager.Repair;
-		crackDestructionRate = gameManager.CrackDrestructionRate;
-		crackHitPoints = gameManager.CrackHitPoints;
-		crackRepairByPunch = gameManager.CrackRepairByPunch;
-		crackRepairByWrench = gameManager.CrackRepairByWrench;
+		gameManager = GameObject.Find("GameManager");
+		gm = gameManager.GetComponent<GameManager>() as GameManager;
+
+		repair = gm.Repair;
+		crackDestructionRate = gm.CrackDrestructionRate;
+		crackHitPoints = gm.CrackHitPoints;
+		crackRepairByPunch = gm.CrackRepairByPunch;
+		crackRepairByWrench = gm.CrackRepairByWrench;
 
 		currentHitPoints = 0;
 		StartCoroutine (DamageShip());
@@ -28,7 +32,7 @@ public class Crack : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (currentHitPoints >= crackHitPoints) {
-			gameManager.ShipHealth += (int)repair;
+			gm.ShipHealth += (int)repair;
 			Destroy (gameObject);
 		}
 	}
@@ -36,7 +40,7 @@ public class Crack : MonoBehaviour {
 	IEnumerator DamageShip(){
 		while (true) {
 			yield return new WaitForSeconds (crackDestructionRate);
-			gameManager.ShipHealth -= 1;
+			gm.ShipHealth -= 1;
 		}
 	}
 

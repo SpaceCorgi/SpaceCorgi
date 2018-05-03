@@ -575,7 +575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb602f1977468474b922ab1ca6d18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPowered: 1
+  isPowered: 0
   hasSwitch: 0
   switchOn: 0
   generators:
@@ -1232,6 +1232,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114772254800084592, guid: fbf80be90788d1141b184ec974d84431,
+        type: 2}
+      propertyPath: isPowered
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fbf80be90788d1141b184ec974d84431, type: 2}
   m_IsPrefabParent: 0
@@ -1562,7 +1567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb602f1977468474b922ab1ca6d18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPowered: 1
+  isPowered: 0
   hasSwitch: 0
   switchOn: 0
   generators:
@@ -1697,6 +1702,24 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b96eda1a94ef28c4280fb84859ec5608, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &381076431 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1526538324369502, guid: fbf80be90788d1141b184ec974d84431,
+    type: 2}
+  m_PrefabInternal: {fileID: 239912480}
+--- !u!114 &381076433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 381076431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7991e74a7bb96154a99d1844e3c8eb03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 15
+  isBroken: 0
 --- !u!1001 &392979196
 Prefab:
   m_ObjectHideFlags: 0
@@ -2386,7 +2409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb602f1977468474b922ab1ca6d18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPowered: 1
+  isPowered: 0
   hasSwitch: 0
   switchOn: 0
   generators:
@@ -2456,6 +2479,24 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b96eda1a94ef28c4280fb84859ec5608, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &508891443 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1526538324369502, guid: fbf80be90788d1141b184ec974d84431,
+    type: 2}
+  m_PrefabInternal: {fileID: 14291761}
+--- !u!114 &508891445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 508891443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7991e74a7bb96154a99d1844e3c8eb03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 15
+  isBroken: 0
 --- !u!4 &546472531 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4575350531261358, guid: b96eda1a94ef28c4280fb84859ec5608,
@@ -2695,7 +2736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb602f1977468474b922ab1ca6d18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPowered: 1
+  isPowered: 0
   hasSwitch: 0
   switchOn: 0
   generators:
@@ -2977,7 +3018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb602f1977468474b922ab1ca6d18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPowered: 1
+  isPowered: 0
   hasSwitch: 0
   switchOn: 0
   generators:
@@ -3072,7 +3113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb602f1977468474b922ab1ca6d18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPowered: 1
+  isPowered: 0
   hasSwitch: 0
   switchOn: 0
   generators:
@@ -3491,7 +3532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb602f1977468474b922ab1ca6d18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPowered: 1
+  isPowered: 0
   hasSwitch: 0
   switchOn: 0
   generators:
@@ -3544,7 +3585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb602f1977468474b922ab1ca6d18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPowered: 1
+  isPowered: 0
   hasSwitch: 0
   switchOn: 0
   generators:
@@ -4615,7 +4656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb602f1977468474b922ab1ca6d18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPowered: 1
+  isPowered: 0
   hasSwitch: 0
   switchOn: 0
   generators:
@@ -6014,7 +6055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb602f1977468474b922ab1ca6d18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPowered: 1
+  isPowered: 0
   hasSwitch: 0
   switchOn: 0
   generators:
@@ -6321,7 +6362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb602f1977468474b922ab1ca6d18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPowered: 1
+  isPowered: 0
   hasSwitch: 0
   switchOn: 0
   generators:
@@ -6374,7 +6415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb602f1977468474b922ab1ca6d18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPowered: 1
+  isPowered: 0
   hasSwitch: 0
   switchOn: 0
   generators:
@@ -6553,7 +6594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb602f1977468474b922ab1ca6d18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPowered: 1
+  isPowered: 0
   hasSwitch: 0
   switchOn: 0
   generators:
