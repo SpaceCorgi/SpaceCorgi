@@ -18,6 +18,8 @@ public class ActivableObject : MonoBehaviour {
 	void Update () {
 		if (!generators [0].isPowered && !generators [1].isPowered) {
 			isPowered = false;
+		} else {
+			isPowered = true;
 		}
 
 		if (isPowered) {
