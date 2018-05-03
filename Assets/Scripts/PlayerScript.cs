@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour
 {
 
-    #region Variables
+	#region Variables
 
     [Header("Global player setting")]
 
@@ -25,7 +25,7 @@ public class PlayerScript : MonoBehaviour
     public bool isCollectibleInHands;
     public Rigidbody2D selectedCollectible;
 
-    #endregion Variables
+    #endregion 
 
 
     void Start()

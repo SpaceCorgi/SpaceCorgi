@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Ground
   - Collectible
+  - Button
+  - Lights
+  - Door
+  - Walls
   layers:
   - Default
   - TransparentFX
@@ -17,7 +21,7 @@ TagManager:
   - 
   - Player
   - Objets
-  - 
+  - Walls
   - 
   - 
   - 
