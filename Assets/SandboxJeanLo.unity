@@ -354,12 +354,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPowered: 0
-  hasSwitch: 0
+  hasSwitch: 1
   switchOn: 0
   generators:
   - {fileID: 239912482}
   - {fileID: 14291762}
-  button: {fileID: 0}
+  button: {fileID: 218694300}
 --- !u!1001 &47259510
 Prefab:
   m_ObjectHideFlags: 0
@@ -1305,6 +1305,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4575350531261358, guid: b96eda1a94ef28c4280fb84859ec5608,
     type: 2}
   m_PrefabInternal: {fileID: 1023891662}
+--- !u!114 &218694300 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114947144938725394, guid: 099fcbe5e24e4164f87d1e3d7ae583e2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1793371659}
+  m_Script: {fileID: 11500000, guid: 530180bc081f5d949ace1e0c0f41112f, type: 3}
 --- !u!4 &218694302 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4146666571080410, guid: 099fcbe5e24e4164f87d1e3d7ae583e2,
