@@ -354,6 +354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPowered: 0
+  hasSwitch: 0
   switchOn: 0
   generators:
   - {fileID: 239912482}
@@ -574,7 +575,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb602f1977468474b922ab1ca6d18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPowered: 0
+  isPowered: 1
+  hasSwitch: 0
   switchOn: 0
   generators:
   - {fileID: 239912482}
@@ -1560,7 +1562,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb602f1977468474b922ab1ca6d18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPowered: 0
+  isPowered: 1
+  hasSwitch: 0
   switchOn: 0
   generators:
   - {fileID: 239912482}
@@ -2383,7 +2386,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb602f1977468474b922ab1ca6d18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPowered: 0
+  isPowered: 1
+  hasSwitch: 0
   switchOn: 0
   generators:
   - {fileID: 239912482}
@@ -2691,7 +2695,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb602f1977468474b922ab1ca6d18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPowered: 0
+  isPowered: 1
+  hasSwitch: 0
   switchOn: 0
   generators:
   - {fileID: 239912482}
@@ -2972,7 +2977,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb602f1977468474b922ab1ca6d18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPowered: 0
+  isPowered: 1
+  hasSwitch: 0
   switchOn: 0
   generators:
   - {fileID: 239912482}
@@ -3066,7 +3072,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb602f1977468474b922ab1ca6d18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPowered: 0
+  isPowered: 1
+  hasSwitch: 0
   switchOn: 0
   generators:
   - {fileID: 239912482}
@@ -3484,7 +3491,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb602f1977468474b922ab1ca6d18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPowered: 0
+  isPowered: 1
+  hasSwitch: 0
   switchOn: 0
   generators:
   - {fileID: 239912482}
@@ -3536,7 +3544,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb602f1977468474b922ab1ca6d18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPowered: 0
+  isPowered: 1
+  hasSwitch: 0
   switchOn: 0
   generators:
   - {fileID: 239912482}
@@ -4606,7 +4615,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb602f1977468474b922ab1ca6d18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPowered: 0
+  isPowered: 1
+  hasSwitch: 0
   switchOn: 0
   generators:
   - {fileID: 239912482}
@@ -6004,7 +6014,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb602f1977468474b922ab1ca6d18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPowered: 0
+  isPowered: 1
+  hasSwitch: 0
   switchOn: 0
   generators:
   - {fileID: 239912482}
@@ -6310,7 +6321,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb602f1977468474b922ab1ca6d18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPowered: 0
+  isPowered: 1
+  hasSwitch: 0
   switchOn: 0
   generators:
   - {fileID: 239912482}
@@ -6362,7 +6374,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb602f1977468474b922ab1ca6d18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPowered: 0
+  isPowered: 1
+  hasSwitch: 0
   switchOn: 0
   generators:
   - {fileID: 239912482}
@@ -6540,7 +6553,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb602f1977468474b922ab1ca6d18d82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPowered: 0
+  isPowered: 1
+  hasSwitch: 0
   switchOn: 0
   generators:
   - {fileID: 239912482}
