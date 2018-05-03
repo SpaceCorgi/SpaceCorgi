@@ -14,7 +14,7 @@ public class WeakPoint : MonoBehaviour {
 	void Update () {
 		if (hitPoints <= 0 && !isBroken) {
 			isBroken = true;
-			gameObject.addComponent (Crack);
+			Crack cr = gameObject.AddComponent<Crack>() as Crack;
 		}
 		if (isBroken) {
 			
